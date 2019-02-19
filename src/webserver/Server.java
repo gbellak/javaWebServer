@@ -6,7 +6,8 @@ import java.net.Socket;
 
 public class Server {
 	public static final int PORT = 4444;
-
+		
+	
 	public static void main(String[] args) throws IOException {
 		new Server().runServer();
 
@@ -17,8 +18,8 @@ public class Server {
 		System.out.println("Server started & ready for connections on port: "+PORT);
 		
 		while(true) {
-		Socket socket = serverSocket.accept();
-		new ServerThread(socket).start();
+			Socket socket = serverSocket.accept();
+			new ServerThread(socket).start();
 		}
 	}
 
