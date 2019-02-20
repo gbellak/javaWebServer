@@ -1,0 +1,553 @@
+Server started & ready for connections on port: 4444
+Parsed Request*******
+method : GET
+Cache-Control : max-age=0
+Accept : text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Upgrade-Insecure-Requests : 1
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Host : localhost:4444
+Accept-Encoding : gzip, deflate, br
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+uri : /
+version : HTTP/1.1
+url : /index.html
+
+./webpages/index.html
+html
+Parsed Request*******
+method : GET
+Accept : image/webp,image/apng,image/*,*/*;q=0.8
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Accept-Encoding : gzip, deflate, br
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+uri : /images/abborre_anim.gif
+version : HTTP/1.1
+url : /images/abborre_anim.gif
+
+./webpages/images/abborre_anim.gif
+gif
+Parsed Request*******
+method : GET
+Accept : image/webp,image/apng,image/*,*/*;q=0.8
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Accept-Encoding : gzip, deflate, br
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+uri : /images/beers.jpg
+version : HTTP/1.1
+url : /images/beers.jpg
+
+./webpages/images/beers.jpg
+jpg
+Parsed Request*******
+method : GET
+Accept : */*
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Accept-Encoding : identity;q=1, *;q=0
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+Range : bytes=0-
+uri : /videos/Funny%20Cats.mp4
+version : HTTP/1.1
+url : /videos/Funny%20Cats.mp4
+
+./webpages/videos/Funny%20Cats.mp4
+Parsed Request*******
+method : GET
+Accept : image/webp,image/apng,image/*,*/*;q=0.8
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Pragma : no-cache
+Accept-Encoding : gzip, deflate, br
+uri : /favicon.ico
+version : HTTP/1.1
+url : /favicon.ico
+Cache-Control : no-cache
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+
+./webpages/favicon.ico
+ico
+Parsed Request*******
+method : GET
+Cache-Control : max-age=0
+Accept : text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Upgrade-Insecure-Requests : 1
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Host : localhost:4444
+Accept-Encoding : gzip, deflate, br
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+uri : /
+version : HTTP/1.1
+url : /index.html
+
+./webpages/index.html
+html
+Parsed Request*******
+method : GET
+Accept : image/webp,image/apng,image/*,*/*;q=0.8
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Accept-Encoding : gzip, deflate, br
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+uri : /images/abborre_anim.gif
+version : HTTP/1.1
+url : /images/abborre_anim.gif
+
+./webpages/images/abborre_anim.gif
+gif
+Parsed Request*******
+method : GET
+Accept : image/webp,image/apng,image/*,*/*;q=0.8
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Accept-Encoding : gzip, deflate, br
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+uri : /images/beers.jpg
+version : HTTP/1.1
+url : /images/beers.jpg
+
+./webpages/images/beers.jpg
+jpg
+Parsed Request*******
+method : GET
+Accept : */*
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Accept-Encoding : identity;q=1, *;q=0
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+Range : bytes=0-
+uri : /videos/sample.mp4
+version : HTTP/1.1
+url : /videos/sample.mp4
+
+./webpages/videos/sample.mp4
+mp4
+Parsed Request*******
+method : GET
+Accept : image/webp,image/apng,image/*,*/*;q=0.8
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Pragma : no-cache
+Accept-Encoding : gzip, deflate, br
+uri : /favicon.ico
+version : HTTP/1.1
+url : /favicon.ico
+Cache-Control : no-cache
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+
+./webpages/favicon.ico
+ico
+Parsed Request*******
+method : GET
+Cache-Control : max-age=0
+Accept : text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Upgrade-Insecure-Requests : 1
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Host : localhost:4444
+Accept-Encoding : gzip, deflate, br
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+uri : /
+version : HTTP/1.1
+url : /index.html
+
+./webpages/index.html
+html
+Parsed Request*******
+method : GET
+Accept : image/webp,image/apng,image/*,*/*;q=0.8
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Accept-Encoding : gzip, deflate, br
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+uri : /images/abborre_anim.gif
+version : HTTP/1.1
+url : /images/abborre_anim.gif
+
+./webpages/images/abborre_anim.gif
+gif
+Parsed Request*******
+method : GET
+Accept : image/webp,image/apng,image/*,*/*;q=0.8
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Accept-Encoding : gzip, deflate, br
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+uri : /images/beers.jpg
+version : HTTP/1.1
+url : /images/beers.jpg
+
+./webpages/images/beers.jpg
+jpg
+Parsed Request*******
+method : GET
+Accept : */*
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Accept-Encoding : identity;q=1, *;q=0
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+Range : bytes=0-
+uri : /videos/sample.mp4
+version : HTTP/1.1
+url : /videos/sample.mp4
+
+./webpages/videos/sample.mp4
+mp4
+Parsed Request*******
+method : GET
+Accept : image/webp,image/apng,image/*,*/*;q=0.8
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Pragma : no-cache
+Accept-Encoding : gzip, deflate, br
+uri : /favicon.ico
+version : HTTP/1.1
+url : /favicon.ico
+Cache-Control : no-cache
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+
+./webpages/favicon.ico
+ico
+Parsed Request*******
+method : GET
+Cache-Control : max-age=0
+Accept : text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Upgrade-Insecure-Requests : 1
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Host : localhost:4444
+Accept-Encoding : gzip, deflate, br
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+uri : /
+version : HTTP/1.1
+url : /index.html
+
+./webpages/index.html
+html
+Parsed Request*******
+method : GET
+Accept : image/webp,image/apng,image/*,*/*;q=0.8
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Accept-Encoding : gzip, deflate, br
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+uri : /images/abborre_anim.gif
+version : HTTP/1.1
+url : /images/abborre_anim.gif
+
+./webpages/images/abborre_anim.gif
+gif
+Parsed Request*******
+method : GET
+Accept : image/webp,image/apng,image/*,*/*;q=0.8
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Accept-Encoding : gzip, deflate, br
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+uri : /images/beers.jpg
+version : HTTP/1.1
+url : /images/beers.jpg
+
+./webpages/images/beers.jpg
+jpg
+Parsed Request*******
+method : GET
+Accept : */*
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Accept-Encoding : identity;q=1, *;q=0
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+Range : bytes=0-
+uri : /videos/sample.mp4
+version : HTTP/1.1
+url : /videos/sample.mp4
+
+./webpages/videos/sample.mp4
+mp4
+Parsed Request*******
+method : GET
+Accept : image/webp,image/apng,image/*,*/*;q=0.8
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Pragma : no-cache
+Accept-Encoding : gzip, deflate, br
+uri : /favicon.ico
+version : HTTP/1.1
+url : /favicon.ico
+Cache-Control : no-cache
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+
+./webpages/favicon.ico
+ico
+Parsed Request*******
+method : GET
+Cache-Control : max-age=0
+Accept : text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Upgrade-Insecure-Requests : 1
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Host : localhost:4444
+Accept-Encoding : gzip, deflate, br
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+uri : /
+version : HTTP/1.1
+url : /index.html
+
+./webpages/index.html
+html
+Parsed Request*******
+method : GET
+Accept : image/webp,image/apng,image/*,*/*;q=0.8
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Accept-Encoding : gzip, deflate, br
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+uri : /images/abborre_anim.gif
+version : HTTP/1.1
+url : /images/abborre_anim.gif
+
+./webpages/images/abborre_anim.gif
+gif
+Parsed Request*******
+method : GET
+Accept : image/webp,image/apng,image/*,*/*;q=0.8
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Accept-Encoding : gzip, deflate, br
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+uri : /images/beers.jpg
+version : HTTP/1.1
+url : /images/beers.jpg
+
+./webpages/images/beers.jpg
+jpg
+Parsed Request*******
+method : GET
+Accept : */*
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Accept-Encoding : identity;q=1, *;q=0
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+Range : bytes=0-
+uri : /videos/sample.mp4
+version : HTTP/1.1
+url : /videos/sample.mp4
+
+./webpages/videos/sample.mp4
+mp4
+Parsed Request*******
+method : GET
+Accept : image/webp,image/apng,image/*,*/*;q=0.8
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Pragma : no-cache
+Accept-Encoding : gzip, deflate, br
+uri : /favicon.ico
+version : HTTP/1.1
+url : /favicon.ico
+Cache-Control : no-cache
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+
+./webpages/favicon.ico
+ico
+Parsed Request*******
+method : GET
+Cache-Control : max-age=0
+Accept : text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Upgrade-Insecure-Requests : 1
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Host : localhost:4444
+Accept-Encoding : gzip, deflate, br
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+uri : /
+version : HTTP/1.1
+url : /index.html
+
+./webpages/index.html
+html
+Parsed Request*******
+method : GET
+Accept : image/webp,image/apng,image/*,*/*;q=0.8
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Accept-Encoding : gzip, deflate, br
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+uri : /images/abborre_anim.gif
+version : HTTP/1.1
+url : /images/abborre_anim.gif
+
+./webpages/images/abborre_anim.gif
+gif
+Parsed Request*******
+method : GET
+Accept : image/webp,image/apng,image/*,*/*;q=0.8
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Accept-Encoding : gzip, deflate, br
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+uri : /images/beers.jpg
+version : HTTP/1.1
+url : /images/beers.jpg
+
+./webpages/images/beers.jpg
+jpg
+Parsed Request*******
+method : GET
+Accept : */*
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Accept-Encoding : identity;q=1, *;q=0
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+Range : bytes=0-
+uri : /videos/sample.mp4
+version : HTTP/1.1
+url : /videos/sample.mp4
+
+./webpages/videos/sample.mp4
+mp4
+Parsed Request*******
+method : GET
+Accept : image/webp,image/apng,image/*,*/*;q=0.8
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Pragma : no-cache
+Accept-Encoding : gzip, deflate, br
+uri : /favicon.ico
+version : HTTP/1.1
+url : /favicon.ico
+Cache-Control : no-cache
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+
+./webpages/favicon.ico
+ico
+Parsed Request*******
+method : GET
+Cache-Control : max-age=0
+Accept : text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Upgrade-Insecure-Requests : 1
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Host : localhost:4444
+Accept-Encoding : gzip, deflate, br
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+uri : /
+version : HTTP/1.1
+url : /index.html
+
+./webpages/index.html
+html
+Parsed Request*******
+method : GET
+Accept : image/webp,image/apng,image/*,*/*;q=0.8
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Accept-Encoding : gzip, deflate, br
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+uri : /images/abborre_anim.gif
+version : HTTP/1.1
+url : /images/abborre_anim.gif
+
+./webpages/images/abborre_anim.gif
+gif
+Parsed Request*******
+method : GET
+Accept : image/webp,image/apng,image/*,*/*;q=0.8
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Accept-Encoding : gzip, deflate, br
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+uri : /images/beers.jpg
+version : HTTP/1.1
+url : /images/beers.jpg
+
+./webpages/images/beers.jpg
+jpg
+Parsed Request*******
+method : GET
+Accept : */*
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Accept-Encoding : identity;q=1, *;q=0
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+Range : bytes=0-
+uri : /videos/sample.mp4
+version : HTTP/1.1
+url : /videos/sample.mp4
+
+./webpages/videos/sample.mp4
+mp4
+Parsed Request*******
+method : GET
+Accept : image/webp,image/apng,image/*,*/*;q=0.8
+Connection : keep-alive
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Referer : http://localhost:4444/
+Host : localhost:4444
+Pragma : no-cache
+Accept-Encoding : gzip, deflate, br
+uri : /favicon.ico
+version : HTTP/1.1
+url : /favicon.ico
+Cache-Control : no-cache
+Accept-Language : sv-SE,sv;q=0.9,en-US;q=0.8,en;q=0.7,da;q=0.6
+
+./webpages/favicon.ico
+ico

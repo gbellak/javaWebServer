@@ -11,7 +11,7 @@ public class Request {
 	Boolean hasBody; //Not implemented yet!!!
 	Boolean hasParameters;
 	
-	Socket socket;
+	private Socket socket;
 	
 	public HashMap<String,String> header = new HashMap<String,String>(); //should be private with getters
 	public HashMap<String,String> parameters = new HashMap<String,String>(); //should be private with getters
@@ -21,6 +21,10 @@ public class Request {
 		this.hasBody = false;
 		this.hasParameters =false;
 		parseRequest();
+	}
+	
+	public Socket getSocket() {
+		return this.socket;  //return the socket bound to this request
 	}
 	
 	
@@ -59,7 +63,6 @@ public class Request {
 
 			}
 		else {
-			bufferedReader.close();
 			break;
 			}
 				
@@ -109,6 +112,10 @@ public class Request {
 		}
 		
 		
+	}
+	
+	public String getURL() {
+		return this.header.get("url");
 	}
 	
 	@Override
