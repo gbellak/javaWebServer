@@ -16,6 +16,8 @@ public class Request {
 	public HashMap<String,String> header = new HashMap<String,String>(); //should be private with getters
 	public HashMap<String,String> parameters = new HashMap<String,String>(); //should be private with getters
 	
+	public String body;
+	
 	public Request(Socket socket) throws IOException {
 		this.socket = socket;
 		this.hasBody = false;
@@ -66,7 +68,27 @@ public class Request {
 			break;
 			}
 				
-		} 
+		}
+	
+	//Get message body if content length >0
+	if(this.header.get("Content-Length") != null && Integer.parseInt(this.header.get("Content-Length"))>0){
+		StringBuilder contentBuilder = new StringBuilder();
+		while(true){
+			message = bufferedReader.readLine();
+			
+		
+			if (message != null && !message.isEmpty()){	
+				contentBuilder.append(message);
+
+				}
+			else {
+				break;
+				}
+					
+			}
+		this.body = contentBuilder.toString();
+		this.hasBody = true;
+		}
 	
 		
 	System.out.println(this); //Debug
@@ -135,8 +157,14 @@ public class Request {
 				contentBuilder.append(key +" : " + parameters.get(key)+"\n");
 						}
 		}
+		
+		if (this.hasBody) {
+			contentBuilder.append("Message Body*****\n");
+			contentBuilder.append(this.body+"\n");
+		}
 				
 		return contentBuilder.toString();
-	}
+	
 
+}
 }

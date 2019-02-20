@@ -7,6 +7,7 @@ import java.net.Socket;
 
 public class ServerThread extends Thread {
 	Socket socket;
+	String requestURL;
 	
 	
 	ServerThread(Socket socket){
@@ -19,11 +20,16 @@ public class ServerThread extends Thread {
 
 		Request request = new Request(socket);
 		Response response = new Response(request);
+		requestURL = request.header.get("url");
 		
 		//Do request routing in switch depending on url
-		
+		if(requestURL.startsWith("/greetings/") || requestURL.startsWith("/Greetings/")) {
+			GreetingsApp greetingsApp = new GreetingsApp(request, response);
+		}
 
-		WebRequestHandler webrequesthandler = new WebRequestHandler(request, response);
+		else {
+			WebRequestHandler webrequesthandler = new WebRequestHandler(request, response);
+		}
 
 			
 		

@@ -13,6 +13,7 @@ public class Response {
 	private String statusText; //A status text. A brief, purely informational, textual description of the status code to help a human understand the HTTP message.
 	private String contentLength;
 	private String contentType;
+	private String location;
 	
 	private byte[] responseByteFormat;
 	private String responseTextFormat;
@@ -24,14 +25,22 @@ public class Response {
 		this.contentLength = null;
 		this.responseByteFormat = null;
 		this.responseTextFormat = null;
+		this.location = null; //needed for redirect
 			
 	}
 	
 
 	public void sendResponse() throws IOException { //Creates and sends HTML response based on set properties
+		
 		PrintWriter out = new PrintWriter(request.getSocket().getOutputStream());
-		out.println(generateStatusLine());	
+		out.println(generateStatusLine());
+		System.out.println("StatusLine: \n"+generateStatusLine());// debug
 		out.println(generateMsgHeader());
+		
+		if (this.location != null) {
+			out.println("Location: "+this.location);
+			System.out.println("Location: \n"+this.location);// debug
+		}
 		
 		if (this.contentType != null) {
 			out.println("Content-Type: "+this.contentType);
@@ -106,5 +115,11 @@ public class Response {
 		this.responseTextFormat = responseTextFormat;
 	}
 
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+	
 	
 }

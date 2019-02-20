@@ -118,7 +118,7 @@ public class WebRequestHandler {
 						
 						this.response.setStatus("200");
 					    this.response.setStatusText("OK");
-					    this.response.setContentType("image/webp"); //hårdkodad!!!
+					    this.response.setContentType(contentType[0]+"/"+contentType[1]);
 					    this.response.setResponseByteFormat(fileData);   
 					    
 					    this.response.sendResponse();
