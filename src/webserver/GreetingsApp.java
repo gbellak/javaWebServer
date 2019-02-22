@@ -6,19 +6,16 @@ import java.util.HashMap;
 public class GreetingsApp {
 	Request request;
 	Response response;
-	String htmlPrefix;
-	String htmlPostfix;
+	String htmlPrefix  = "<!DOCTYPE html><html><head><meta charset='ISO-8859-1'><title>Greetings!</title></head><body>"
+			+ "<h2>Welcome to the Greeting App</h2><h3>The most friendly app on the Internet</h3><hr><br>";
+	String htmlPostfix= "<hr></body></html>";
 	
-	public GreetingsApp(Request request, Response response) throws IOException{
+
+	public void manageRequest(Request request, Response response) {
 		this.request = request;
 		this.response = response;
-		
-		this.htmlPrefix = "<!DOCTYPE html><html><head><meta charset='ISO-8859-1'><title>Greetings!</title></head><body>"
-				+ "<h2>Welcome to the Greeting App</h2><h3>The most friendly app on the Internet</h3><hr><br>";
-		
-		this.htmlPostfix = "<hr></body></html>";
-		
-		switch(this.request.header.get("url")){
+
+		switch(request.header.get("url")){
 			case "/Greetings/":
 			case "/greetings/":
 				greetingForm();
@@ -64,53 +61,24 @@ public class GreetingsApp {
 	}
 	
 	private void greetingForm() {
-		switch(this.request.header.get("method")){
+		StringBuilder contentBuilder = new StringBuilder();	
 		
-		
-		case "POST":
-			if (this.request.hasBody) {
-				System.out.println("has body!");// debug
-				
-				StringBuilder contentBuilder = new StringBuilder();		
-				contentBuilder.append("/Greetings/");
-				
-				String[] bodyparts  = this.request.body.split("&");
-				for(String part : bodyparts) {
-					
-					Integer index = part.indexOf("=");
-					contentBuilder.append(part.substring(index+1)+"/"); //skip the =
-				}
-		
-				this.response.setStatus("302");
-			    this.response.setStatusText("Relocate");
-			    this.response.setLocation(contentBuilder.toString());
-			    this.response.setContentType("text/html");
-			    
-			    System.out.println(contentBuilder.toString());// debug
-			    try {
-					this.response.sendResponse();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
-		break;
-		
-		case "GET":
-			StringBuilder contentBuilder = new StringBuilder();
+		if(!this.request.hasBody){
+
+			contentBuilder = new StringBuilder();
 			contentBuilder = new StringBuilder();
 			contentBuilder.append(this.htmlPrefix);
-			contentBuilder.append("<h2>Greeting Request</h2><form  method='post'>Salutation:<br><input type='text' name='salutation' value='' placeholder = 'Mr'>");
+			contentBuilder.append("<h2>Greeting Request</h2><form action='' method='post'>Salutation:<br><input type='text' name='salutation' value='' placeholder = 'Mr'>");
 			contentBuilder.append("<br>First name:<br><input type='text' name='firstname' value='' placeholder = 'Bob'>");
 			contentBuilder.append("<br>Last name:<br><input type='text' name='lastname' value='' placeholder = 'Dobalina'><br><br>");
 			contentBuilder.append("<input type='submit' value='Submit'></form>");
 			contentBuilder.append(this.htmlPostfix);
 			
-			this.response.setStatus("200");
-		    this.response.setStatusText("OK");
+			response.setStatus("200");
+		    response.setStatusText("OK");
 		    	    
-		    this.response.setContentType("text/html");
-		    this.response.setResponseTextFormat(contentBuilder.toString());
+		    response.setContentType("text/html");
+		    response.setResponseTextFormat(contentBuilder.toString());
 		    
 		    try {
 				this.response.sendResponse();
@@ -118,14 +86,67 @@ public class GreetingsApp {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+		}
+		else {
+			
+						
+					
+				contentBuilder.append("/greetings/");
+				
+				if (this.request.hasBody) {
+				System.out.println("has body!");// debug
+					
+				String[] bodyparts  = request.body.split("&");
+				for(String part : bodyparts) {
+					
+					Integer index = part.indexOf("=");
+					contentBuilder.append(part.substring(index+1)+"/"); //skip the =
+				}
+				
+		
+				this.response.setStatus("302");
+				this.response.setStatusText("Relocate");
+				this.response.setLocation(contentBuilder.toString());
+//				this.response.setContentType("text/html");
+			    
+			    System.out.println(contentBuilder.toString());// debug
+			    try {
+			    	this.response.sendResponse();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+			
+			}
+				}
+				else {
+					System.out.println("empty posting");// debug
+					this.response.setStatus("302");
+					this.response.setStatusText("Relocate");
+					this.response.setLocation("/Greetings/");
+//					this.response.setContentType("application/x-www-form-urlencoded");
+				    
+				    System.out.println(contentBuilder.toString());// debug
+				    try {
+				    	this.response.sendResponse();
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					
+				}}
+		
+
 	    
-		 break;
+		
 		 
 		 //add default: method not implemented message
 	    
 		}
 		
+		
+		
 	}
+	
+
 }
 
 

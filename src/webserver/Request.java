@@ -137,7 +137,7 @@ public class Request {
 	}
 	
 	public String getURL() {
-		return this.header.get("url");
+		return this.header.get("url").toLowerCase().trim();
 	}
 	
 	@Override

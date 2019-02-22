@@ -17,9 +17,15 @@ public class Server {
 		ServerSocket serverSocket = new ServerSocket(PORT);
 		System.out.println("Server started & ready for connections on port: "+PORT);
 		
+		
+		
 		while(true) {
 			Socket socket = serverSocket.accept();
 			new ServerThread(socket).start();
+			
+			
+			
+			
 		}
 	}
 
