@@ -77,7 +77,7 @@ public class WebRequestHandler {
 			contentType = findContentType(requestedFile.substring(requestedFile.lastIndexOf('.') + 1));
 			System.out.println(requestedFile.substring(requestedFile.lastIndexOf('.') + 1)); //debug
 			
-			if(contentType[0] =="text"){
+			if(contentType[0].equals("text")){
 	
 				StringBuilder contentBuilder = new StringBuilder();	
 				try {
@@ -103,7 +103,7 @@ public class WebRequestHandler {
 					}
 			}
 			
-			else { //if file found but NOT html file
+			else { //if file found but NOT text file
 				
 						FileInputStream fileIn = null;
 						byte[] fileData = new byte[(int) fileName.length()];
@@ -187,6 +187,11 @@ public class WebRequestHandler {
 			contentType[0]="video";
 			contentType[1]="mp4";
 			break;
+		
+		case "js":
+			contentType[0]="application";
+			contentType[1]="javascript";
+			
 		
 		default:
 

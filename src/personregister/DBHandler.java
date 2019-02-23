@@ -9,10 +9,13 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.sqlite.SQLiteConfig;
+
 
 public class DBHandler {
 	
 	String DB_URI = "jdbc:sqlite:./database/test.db";
+
 	Connection connection;
 	
 	public	DBHandler() throws SQLException{
@@ -29,7 +32,7 @@ public class DBHandler {
 		else {
 			queryString = "SELECT id ,firstname ,lastname, birthyear,city FROM person;";
 		}
-		System.out.println(queryString);	
+			
 		
 		List<Person> persons = new ArrayList<Person>();
 		
@@ -51,7 +54,7 @@ public class DBHandler {
 					
 
 				
-				System.out.println(person);
+			
 				}
 			
 						} //end of try with resources

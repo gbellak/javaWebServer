@@ -1,5 +1,7 @@
 package personregister;
 
+import org.json.JSONArray;
+
 public class Person {
 	
 	private int id;
@@ -7,6 +9,8 @@ public class Person {
 	private String lastName;
 	private int birthYear;
 	private String city;
+	
+	
 
 	
 	
@@ -85,11 +89,13 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "{id : "+id+", firstName : " + firstName + ", lastName : " + lastName + ", birthYear : " + birthYear + ", city : "
-				+ city + "}";
+		return "{\"id\" : "+id+", \"firstName\" : \"" + firstName + "\", \"lastName\" : \"" + lastName + "\", \"birthYear\" : " + birthYear + ", \"city\" : \""
+				+ city + "\"}";
 	}
 	
 	
 	
+		
+	}
+	
 
-}
