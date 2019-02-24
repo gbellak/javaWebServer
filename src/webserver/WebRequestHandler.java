@@ -49,20 +49,12 @@ public class WebRequestHandler {
 				break;
 			
 			default:
-
-				this.response.setStatus("501");
-			    this.response.setStatusText("Method not supported!");
-			    try {
-					this.response.sendResponse();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+				
+				this.response.send_501_NotSupported();
 			}
-		
-		
+
+		}
 	
-	}
 	private void processGET() throws IOException {
 
 		
@@ -87,19 +79,15 @@ public class WebRequestHandler {
 					        contentBuilder.append(response);
 					    }
 					    in.close();
-				    
-					    this.response.setStatus("200");
-					    this.response.setStatusText("OK");
 					    
 					    this.response.setContentType(contentType[0]+"/"+contentType[1]);
 					    
 					    this.response.setResponseTextFormat(contentBuilder.toString());   
-					    
-					    this.response.sendResponse();
-					    
+
+					    this.response.send_200_OK();
 					} 
 				catch (IOException e) {
-						send404();
+					this.response.send_404_NotFound();
 					}
 			}
 			
@@ -128,7 +116,7 @@ public class WebRequestHandler {
 			
 		}		
 		else { //if requested file not found
-			send404();
+			this.response.send_404_NotFound();
 			}
 		}
 			
@@ -141,17 +129,7 @@ public class WebRequestHandler {
 		return "";
 	}
 	
-	private void send404() {
-		this.response.setStatus("404");
-	    this.response.setStatusText("Page not found!");
-	    try {
-			this.response.sendResponse();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-	}
+	
 	
 	private String[] findContentType(String fileExtension) {
 		String[] contentType = new String[2];

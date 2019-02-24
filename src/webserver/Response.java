@@ -120,6 +120,41 @@ public class Response {
 		this.location = location;
 	}
 
+	public void send_200_OK() {
+		this.setStatus("200");
+	    this.setStatusText("OK");
+	    try {
+			this.sendResponse();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public void send_404_NotFound() {
+		this.setStatus("404");
+	    this.setStatusText("Page not found!");
+	    try {
+			this.sendResponse();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	    
+	public void send_501_NotSupported() {
+		this.setStatus("501");
+	    this.setStatusText("Method not supported!");
+	    try {
+			this.sendResponse();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
 	
 	
 }
