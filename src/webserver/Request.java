@@ -5,11 +5,13 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.Socket;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Request {
 	Boolean hasBody; //Not implemented yet!!!
 	Boolean hasParameters;
+	ArrayList<String> route;
 	
 	private Socket socket;
 	
@@ -71,27 +73,21 @@ public class Request {
 		}
 	
 	//Get message body if content length >0
-	if(this.header.get("Content-Length") != null && Integer.parseInt(this.header.get("Content-Length"))>0){
-		StringBuilder contentBuilder = new StringBuilder();
-		while(true){
-			message = bufferedReader.readLine();
-			
+	if(this.header.get("Content-Length") != null) {
 		
-			if (message != null && !message.isEmpty()){	
-				contentBuilder.append(message);
+		StringBuilder bodyBuilder = new StringBuilder();
+		int character;
+		
+		for (int i = 0; i < Integer.parseInt(this.header.get("Content-Length")); i++) {
+			character = bufferedReader.read();
+			bodyBuilder.append( (char)character ) ;  
+		}
 
-				}
-			else {
-				break;
-				}
-					
-			}
-		this.body = contentBuilder.toString();
+
+		this.body = bodyBuilder.toString();
 		this.hasBody = true;
 		}
-	
-		
-	System.out.println(this); //Debug
+
 	}
 	
 	//Parsing the incoming uri into url + parameters
@@ -99,7 +95,7 @@ public class Request {
 		String url;
 		String params = null;
 		
-		if(uri.equals("/") || uri.equals("/home")) {
+		if(uri.equals("/") || uri.equals("/home")) {  //should issue redirect instead...
 			uri ="/index.html";
 		}
 		
@@ -120,6 +116,19 @@ public class Request {
 		}
 		
 		header.put("url", url);
+		
+		//assemble the route array list from url:
+		
+		String[] parts = url.split("/");
+		this.route = new ArrayList<>();
+		for (int i = 0; i < parts.length; i++) { 
+			if(!parts[i].isEmpty()) {   //skip empty route parts
+				this.route.add(parts[i]);
+			}
+			
+			
+			
+		}
 
 	}
 	
@@ -149,6 +158,8 @@ public class Request {
 		for (String key : header.keySet()) {
 			contentBuilder.append(key +" : " + header.get(key)+"\n");
 					}
+		
+		contentBuilder.append("route arraylist: " + this.route.toString()+"\n");
 		
 		if (this.hasParameters) {
 			contentBuilder.append("Parsed Parameters*****\n");

@@ -191,7 +191,12 @@ public class WebRequestHandler {
 		case "js":
 			contentType[0]="application";
 			contentType[1]="javascript";
-			
+			break;
+		
+		case "css":
+			contentType[0]="text";
+			contentType[1]="css";
+			break;
 		
 		default:
 

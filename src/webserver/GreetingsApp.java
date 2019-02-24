@@ -14,20 +14,18 @@ public class GreetingsApp {
 	public void manageRequest(Request request, Response response) {
 		this.request = request;
 		this.response = response;
-
-		switch(request.header.get("url")){
-			case "/Greetings/":
-			case "/greetings/":
-				greetingForm();
-				break;
-			
-				
-			default:
-				displayGreeting();
-				break;
+		
+		
+		if(request.route.size()>1) {
+			displayGreeting();
 			}
-	
+		
+		else {
+			greetingForm();
+		}
 	}
+
+		
 	
 	private void displayGreeting() {
 		String[]greetingParts = this.request.header.get("url").split("/");
@@ -63,7 +61,7 @@ public class GreetingsApp {
 	private void greetingForm() {
 		StringBuilder contentBuilder = new StringBuilder();	
 		
-		if(!this.request.hasBody){
+		if(this.request.header.get("method").equals("GET")){
 
 			contentBuilder = new StringBuilder();
 			contentBuilder = new StringBuilder();
@@ -87,11 +85,10 @@ public class GreetingsApp {
 				e.printStackTrace();
 			}
 		}
-		else {
-			
-						
-					
+		else if(this.request.header.get("method").equals("POST")) {
+		
 				contentBuilder.append("/greetings/");
+				
 				
 				if (this.request.hasBody) {
 				System.out.println("has body!");// debug
@@ -105,7 +102,7 @@ public class GreetingsApp {
 				
 		
 				this.response.setStatus("302");
-				this.response.setStatusText("Relocate");
+				this.response.setStatusText("Found");
 				this.response.setLocation(contentBuilder.toString());
 //				this.response.setContentType("text/html");
 			    

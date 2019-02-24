@@ -39,7 +39,7 @@ public class Response {
 		
 		if (this.location != null) {
 			out.println("Location: "+this.location);
-			System.out.println("Location: \n"+this.location);// debug
+			System.out.println("Location: "+this.location +"\n");// debug
 		}
 		
 		if (this.contentType != null) {
